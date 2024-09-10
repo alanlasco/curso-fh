@@ -29,3 +29,8 @@ FirstApp.propTypes = {
   name: PropTypes.string.isRequired,
   surname: PropTypes.string,
 };
+
+FirstApp.defaultProps = {
+  name: "no hay titulo",
+  surname: "no hay surname",
+};
