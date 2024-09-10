@@ -9,6 +9,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
     {/* <FirstApp name="alan" surname="lasco" /> */}
-    <CounterApp value={1} />
+    <CounterApp value={0} />
   </React.StrictMode>
 );

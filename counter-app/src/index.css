@@ -6,3 +6,10 @@ body {
     font-size: 1.3rem;
     padding: 1em;
 }
+
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-right: 1px;
+}
