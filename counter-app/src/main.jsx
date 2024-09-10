@@ -7,6 +7,6 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <FirstApp name="Hola soy Alan" surname="lasco" />
+    <FirstApp name={123} surname="lasco" />
   </React.StrictMode>
 );
