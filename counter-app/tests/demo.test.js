@@ -1,11 +1,13 @@
-test("esta prueba no debe fallar", () => {
-  //inicializacion
-  const message = "hola mundo";
+describe("pruebas", () => {
+  test("esta prueba no debe fallar", () => {
+    //inicializacion
+    const message = "hola mundo";
 
-  //estimulo
-  const message2 = message.trim();
+    //estimulo
+    const message2 = message.trim();
 
-  //observar
+    //observar
 
-  expect(message).toBe(message2);
+    expect(message).toBe(message2);
+  });
 });
