@@ -1,5 +1,5 @@
 import { number } from "prop-types";
-import { retornaArreglo } from "../src/base-pruebas/07-deses-arr";
+import { retornaArreglo } from "../../src/base-pruebas/07-deses-arr";
 
 describe("peubas en 07-deses-arr", () => {
   test("debe retornar un string y un numero", () => {

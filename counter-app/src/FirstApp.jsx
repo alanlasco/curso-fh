@@ -1,36 +1,33 @@
 import PropTypes from "prop-types";
-
+import React from "react"; // Agrega esta línea
 const say = () => {
   return "Hola ALan";
 };
 
-export const FirstApp = ({ name, surname }) => {
+export const FirstApp = ({ title, subTitle, name }) => {
   //   const newMessage = {
   //     message: "alan",
   //     title: "lasco",
   //   };
-  if (!name) {
-    throw new Error("El nombre no existe");
-  }
 
-  console.log(name);
   return (
     <>
       {/*fragmento */}
       {/* <code>{JSON.stringify(newMessage)}</code> */}
-      <h1>{name + " " + surname}</h1>
+      <h1>{title}</h1>
+      <p>{subTitle}</p>
       <h2>{say()}</h2>
     </>
   );
 };
 
 FirstApp.propTypes = {
-  //isrequired para que sea obligatorio
-  name: PropTypes.string.isRequired,
-  surname: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string,
 };
 
 FirstApp.defaultProps = {
-  name: "no hay titulo",
-  surname: "no hay surname",
+  name: "pipo",
+  subTitle: "no hay subtitulo",
+  title: "no hay titulo",
 };
