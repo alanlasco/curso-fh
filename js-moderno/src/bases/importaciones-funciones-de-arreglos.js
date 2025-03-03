@@ -10,11 +10,11 @@ import heroes, { owners } from "../data/heroes.js";
 //   });
 // };
 
-const getHeroeById = (id) => heroes.find((heroe) => heroe.id == id); // necesita un callback el find, solo devuelve uno
+export const getHeroeById = (id) => heroes.find((heroe) => heroe.id == id); // necesita un callback el find, solo devuelve uno
 
 console.log(getHeroeById(2));
 
-const getHeroeByOwner = (owner) =>
+export const getHeroeByOwner = (owner) =>
   heroes.filter((heroe) => heroe.owner === owner); // filter devuelve todos
 
 console.log(getHeroeByOwner("DC"));
